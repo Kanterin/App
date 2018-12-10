@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/edt1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt1BiologyName"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/name_animal"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt1BiologyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edt1Name"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/biology_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt1Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edt1BiologyName"
+        android:layout_below="@+id/edt1Name"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="@string/quantity"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt1TotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edt1Quantity"
+        android:layout_below="@+id/edt1Quantity"
+        android:ems="10"
+        android:hint="@string/total_price"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnUpdateAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt1TotalPrice"
+        android:layout_marginTop="12dp"
+        android:background="#265dc4"
+        android:text="Update"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageViewAnimal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/edt1Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        app:srcCompat="@mipmap/ic_placeholder" />
+
+</RelativeLayout>

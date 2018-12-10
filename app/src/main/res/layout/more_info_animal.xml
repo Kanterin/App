@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnBackAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="#265dc4"
+                android:text="Powrót"
+                android:textColor="#ffffff" />
+
+
+            <ImageView
+                android:id="@+id/imageViewAnimalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="239dp"
+                android:layout_above="@+id/textViewAnimalName"
+                android:layout_below="@+id/btnBackAnimal"
+                android:layout_alignStart="@+id/btnBackAnimal"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="43dp"
+                app:srcCompat="@mipmap/ic_placeholder" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/textVAnimalName"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nazwa: " />
+
+            <TextView
+                android:id="@+id/textViewAnimalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textVAnimalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opis: " />
+
+        <TextView
+            android:id="@+id/textViewAnimalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/textVAnimalFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rodzina: " />
+
+        <TextView
+            android:id="@+id/textViewAnimalFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/textVAnimalDerivation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pochodzenie: " />
+
+        <TextView
+            android:id="@+id/textViewAnimalDerivation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textVAnimalSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dlugość: " />
+
+        <TextView
+            android:id="@+id/textViewAnimalSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/textVAnimalFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odżywianie: " />
+
+        <TextView
+            android:id="@+id/textViewAnimalFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textVAnimalTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperatura: " />
+
+        <TextView
+            android:id="@+id/textViewAnimalTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textVAnimalConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warunki hodowlane: " />
+
+        <TextView
+            android:id="@+id/textViewAnimalConditions"
+            android:layout_width="match_parent"
+            android:layout_height="73dp" />
+
+        <TextView
+            android:id="@+id/textVAnimalReproduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warunki hodowlane: " />
+
+        <TextView
+            android:id="@+id/textViewAnimalReproduce"
+            android:layout_width="match_parent"
+            android:layout_height="73dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
